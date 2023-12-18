@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEC759"
+    android:gravity="center"
+    android:padding="20dp"
+    tools:context=".OrderMenu">
+    <RelativeLayout
+        android:id="@+id/boxformin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/background_profile"
+        android:padding="10dp"
+        android:elevation="15dp"
+        >
+        <LinearLayout
+            android:id="@+id/filledformin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp" >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/foodset"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Menu Makanan"
+                    android:text="Food"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/black"
+                    android:fontFamily="sans-serif-medium"
+                    android:background="@color/white"
+                    android:enabled="false">
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp" >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/hargaset"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Harga"
+                    android:text="Harga"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:enabled="false"
+                    android:fontFamily="sans-serif-medium"
+                    android:background="@color/white">
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp" >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/jumlahset"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Jumlah"
+                    android:inputType="number"
+                    android:textColor="@color/black"
+                    android:fontFamily="sans-serif-medium"
+                    android:background="@color/white">
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button
+                android:id="@+id/menuset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_profilebutton"
+                android:onClick="btnClick"
+                android:text="Pesan Menu"
+                android:textAllCaps="false"
+                android:fontFamily="sans-serif-medium"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

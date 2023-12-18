@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEC759"
+    android:gravity="center"
+    android:padding="20dp"
+    tools:context=".SignIn">
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@color/black"
+        android:text="Danus Imassi"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+    <RelativeLayout
+        android:id="@+id/boxformin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/background_profile"
+        android:padding="10dp"
+        android:elevation="15dp"
+        >
+        <LinearLayout
+            android:id="@+id/filledformin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp" >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/emailin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/black"
+                    android:fontFamily="sans-serif-medium"
+                    android:background="@color/white">
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp" >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/passwordin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:textColor="@color/black"
+                    android:fontFamily="sans-serif-medium"
+                    android:background="@color/white">
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button
+                android:id="@+id/buttonin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_profilebutton"
+                android:onClick="btnClick"
+                android:text="Sign In"
+                android:textAllCaps="false"
+                android:fontFamily="sans-serif-medium"/>
+            <TextView
+                android:id="@+id/linkin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="20dp"
+                android:text="Belum Punya Akun?"
+                android:onClick="txtInClick"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-medium"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
